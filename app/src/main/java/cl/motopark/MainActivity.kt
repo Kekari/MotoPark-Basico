@@ -55,7 +55,10 @@ fun MotoPark() {
                 // El if decide cuál de las dos pantallas mostrar.
                 Column(Modifier.weight(1f).verticalScroll(rememberScrollState())) {
                     Card(
-                        colors = CardDefaults.cardColors(containerColor = Color(0xFF101010)),
+                        colors = CardDefaults.cardColors(
+                            containerColor = Color(0xFF101010),
+                            contentColor = Color.White,
+                        ),
                         shape = RoundedCornerShape(20.dp),
                         modifier = Modifier.fillMaxWidth(),
                     ) {
